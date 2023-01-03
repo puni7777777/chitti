@@ -10,9 +10,7 @@ imgs[5] = 'images/6.jpg'
 imgs[6] = 'images/7.jpg'
 
 
-window.onload = function(){
-    const random = Math.floor(Math.random)* imgs.length;
-
+document.getElementById('refresh').onclick = function(){
+    const random = Math.floor(Math.random() * imgs.length) ;
     document.body.style.backgroundImage = `url(${imgs[random]})`;
-
 }
