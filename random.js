@@ -1,6 +1,6 @@
-
-/*const fs = require('fs');
-const path = require('path');
+try{
+const fs =require('fs');
+const path =require('path');
 const direc = path.join(__dirname,'images');
 
 fs.readdir(direc,(err,files)=>{
@@ -8,8 +8,9 @@ fs.readdir(direc,(err,files)=>{
         const f = Math.floor(Math.random()* files.length);
         document.body.styles.backgroundImage = `url(${files[f]})`;
     }
-})*/
-
+})
+}
+catch{
 const imgs =[];
 
 imgs[0] = 'images/IMG_20220106_084516.jpg'
@@ -36,4 +37,5 @@ imgs[18] = 'images/Snapchat-2132630427.jpg'
 document.getElementById('refresh').onclick = function(){
     const random = Math.floor(Math.random() * imgs.length) ;
     document.body.style.backgroundImage = `url(${imgs[random]})`;
+}
 }

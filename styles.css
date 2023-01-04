@@ -19,7 +19,7 @@ body{
 
 .btn button{
     background-color: transparent;
-    color: rgba(207, 101, 39, 1);
+    color: rgba(207, 101, 39, .8);
     margin-top: 700px;
     font-size: 24px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
@@ -27,7 +27,7 @@ body{
     cursor: pointer;
 }
 
-.btn :hover .btn :focus{
+.btn :hover , .btn :focus{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-    color: rgba(207, 101, 39, .8);
+    color: rgba(207, 101, 39, 1);
 }
