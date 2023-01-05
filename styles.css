@@ -2,10 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Comic Sans MS';
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
 }
 
 body{
-    outline: 2px solid black;
     background-Image: url('images/IMG_20220106_084516.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -15,11 +20,51 @@ body{
     overflow: none;
 }
 
+/*body{
+    opacity: .7;
+    animation: skeleton 1s linear infinite alternate;
+}
+
+@keyframes skeleton{
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100%{
+        background-color: hsl(200, 20%, 90%);
+    }
+}*/
+
+.about{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(154, 17, 172);
+    font-size: 17px;
+}
+
 .btn{
     text-align: center;
 }
 
-.btn button{
+.btn a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(207, 101, 39);
+    font-size: 24px;
+    padding: 100%;
+}
+
+/*.btn button{
     background-color: transparent;
     color: rgba(207, 101, 39, .8);
     margin-top: 45%;
@@ -32,4 +77,4 @@ body{
 .btn :hover , .btn :focus{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
     color: rgba(207, 101, 39, 1);
-}
+}*/

@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ink Free';
+}
+
+body{
+    opacity: .7;
+    background-image: url('./dec/confetti-sparkle.gif');
+}
+
+body{
+    border: 2px solid black;
+    font-size: 30px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+h1{
+    color: rgb(181, 14, 218);
+    text-align: center;
+}
+
+p{
+    margin-top: 17px;
+    color: white;
+}
